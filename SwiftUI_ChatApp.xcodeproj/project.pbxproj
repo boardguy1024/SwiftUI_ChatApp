@@ -11,19 +11,31 @@
 		4039F92727034224005DEE96 /* SwiftUI_ChatAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4039F91327034221005DEE96 /* SwiftUI_ChatAppApp.swift */; };
 		4039F92827034224005DEE96 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4039F91427034221005DEE96 /* ContentView.swift */; };
 		4039F92927034224005DEE96 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4039F91427034221005DEE96 /* ContentView.swift */; };
-		4039F92A27034224005DEE96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4039F91527034224005DEE96 /* Assets.xcassets */; };
-		4039F92B27034224005DEE96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4039F91527034224005DEE96 /* Assets.xcassets */; };
+		4039F93927034258005DEE96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4039F93827034258005DEE96 /* Assets.xcassets */; };
+		4039F93A27034258005DEE96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4039F93827034258005DEE96 /* Assets.xcassets */; };
+		4039F9412703529F005DEE96 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4039F9402703529F005DEE96 /* Home.swift */; };
+		4039F945270352C7005DEE96 /* TabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4039F944270352C7005DEE96 /* TabButton.swift */; };
+		4039F946270352C7005DEE96 /* TabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4039F944270352C7005DEE96 /* TabButton.swift */; };
+		4039F949270352CA005DEE96 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4039F9402703529F005DEE96 /* Home.swift */; };
+		4039F94D27035492005DEE96 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4039F94C27035492005DEE96 /* HomeViewModel.swift */; };
+		4039F94E27035492005DEE96 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4039F94C27035492005DEE96 /* HomeViewModel.swift */; };
+		4039F95227035817005DEE96 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4039F95127035817005DEE96 /* BlurView.swift */; };
+		4039F95327035817005DEE96 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4039F95127035817005DEE96 /* BlurView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4039F91327034221005DEE96 /* SwiftUI_ChatAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ChatAppApp.swift; sourceTree = "<group>"; };
 		4039F91427034221005DEE96 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		4039F91527034224005DEE96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4039F91A27034224005DEE96 /* SwiftUI_ChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_ChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4039F91D27034224005DEE96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4039F92227034224005DEE96 /* SwiftUI_ChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_ChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4039F92427034224005DEE96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4039F92527034224005DEE96 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		4039F93827034258005DEE96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4039F9402703529F005DEE96 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		4039F944270352C7005DEE96 /* TabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabButton.swift; sourceTree = "<group>"; };
+		4039F94C27035492005DEE96 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		4039F95127035817005DEE96 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +69,12 @@
 		4039F91227034221005DEE96 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				4039F93F27035289005DEE96 /* ViewModel */,
+				4039F93E27035283005DEE96 /* Model */,
+				4039F93D2703527E005DEE96 /* View */,
 				4039F91327034221005DEE96 /* SwiftUI_ChatAppApp.swift */,
 				4039F91427034221005DEE96 /* ContentView.swift */,
-				4039F91527034224005DEE96 /* Assets.xcassets */,
+				4039F93827034258005DEE96 /* Assets.xcassets */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -88,6 +103,31 @@
 				4039F92527034224005DEE96 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		4039F93D2703527E005DEE96 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4039F9402703529F005DEE96 /* Home.swift */,
+				4039F944270352C7005DEE96 /* TabButton.swift */,
+				4039F95127035817005DEE96 /* BlurView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4039F93E27035283005DEE96 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4039F93F27035289005DEE96 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4039F94C27035492005DEE96 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,7 +208,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4039F92A27034224005DEE96 /* Assets.xcassets in Resources */,
+				4039F93927034258005DEE96 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +216,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4039F92B27034224005DEE96 /* Assets.xcassets in Resources */,
+				4039F93A27034258005DEE96 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,7 +228,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4039F92827034224005DEE96 /* ContentView.swift in Sources */,
+				4039F945270352C7005DEE96 /* TabButton.swift in Sources */,
+				4039F9412703529F005DEE96 /* Home.swift in Sources */,
+				4039F94D27035492005DEE96 /* HomeViewModel.swift in Sources */,
 				4039F92627034224005DEE96 /* SwiftUI_ChatAppApp.swift in Sources */,
+				4039F95227035817005DEE96 /* BlurView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,8 +240,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4039F946270352C7005DEE96 /* TabButton.swift in Sources */,
 				4039F92927034224005DEE96 /* ContentView.swift in Sources */,
+				4039F949270352CA005DEE96 /* Home.swift in Sources */,
+				4039F94E27035492005DEE96 /* HomeViewModel.swift in Sources */,
 				4039F92727034224005DEE96 /* SwiftUI_ChatAppApp.swift in Sources */,
+				4039F95327035817005DEE96 /* BlurView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
