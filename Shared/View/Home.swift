@@ -15,7 +15,7 @@ struct Home: View {
     
     var body: some View {
         
-        HStack {
+        HStack(spacing: 0) {
             
             //一番左要素 (TabButtons)
             VStack {
@@ -41,7 +41,7 @@ struct Home: View {
             ZStack {
                 
                 switch viewModel.selectedTab {
-                case "All Chats": Text("All Chats")
+                case "All Chats": NavigationView { AllChatsView() } 
                 case "Personal": Text("Personal")
                 case "Bots": Text("Bots")
                 case "Edit": Text("Edit")
@@ -53,7 +53,7 @@ struct Home: View {
         }
         .ignoresSafeArea(.all, edges: .all)
         .frame(width: screen.width / 2, height: screen.height / 2)
-        
+        .environmentObject(viewModel)
     }
 }
 
