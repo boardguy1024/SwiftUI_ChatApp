@@ -18,4 +18,27 @@ class HomeViewModel: ObservableObject {
     
     // Search
     @Published var search = ""
+    
+    @Published var message = ""
+    
+    // 右のインスペクターのshow&hide
+    @Published var isExpandedInspector = false
+    
+    @Published var pickedTab = "Media"
+    
+    // Send Message
+    
+    func sendMessage(user: RecentMessage) {
+        
+        guard message != "" else { return }
+        
+        let index = msgs.firstIndex { currentUser -> Bool in
+            return currentUser.id == user.id
+        } ?? -1
+        
+        if index != -1 {
+            msgs[index].allMsgs.append(Message(message: message, myMessage: true))
+            message = ""
+        }
+    }
 }

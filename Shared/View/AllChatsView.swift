@@ -49,7 +49,7 @@ struct AllChatsView: View {
                 ForEach(viewModel.msgs) { message in
                     
                     NavigationLink(
-                        destination: /*@START_MENU_TOKEN@*/Text("Destination")/*@END_MENU_TOKEN@*/,
+                        destination: DetailView(user: message),
                         label: {
                             RecentCardView(recentMsg: message)
 

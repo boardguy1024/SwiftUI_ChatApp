@@ -13,5 +13,6 @@ struct SwiftUI_ChatAppApp: App {
         WindowGroup {
             ContentView()
         }
+        .windowStyle(HiddenTitleBarWindowStyle())
     }
 }
